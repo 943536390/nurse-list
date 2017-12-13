@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
     <style type="text/css">
+    /*全局样式*/
     html {
         font-size: 625%;
         height: 100%;
@@ -24,9 +25,25 @@
     }
     * {
         margin: 0;padding: 0;
+        letter-spacing: 0.02rem;
     }
+    a:link, 
+    a:hover, 
+    a:active, 
+    a:visited {
+    	text-decoration: none;
+
+    }
+    button {
+    	outline: none;
+    	border: none;
+    }
+   
+    /*全局样式结束*/
+
    /* header样式*/
     header{
+    	position: fixed;
         width: 100%;
         height: 0.5rem;
         background-color: #5fc0cd;
@@ -59,14 +76,15 @@
 
     }
     
-    button {
+    .btn1, .btn2{
         outline: none;
         border-radius: 4px;
         border: none;
         width: 50%;
         height: 0.42rem;   
         color: white;
-        background: #55a8b3;           
+        background: #55a8b3; 
+         font-size: 0.18rem;          
     }
     .btn2 {
         color:  #5fc0cd;
@@ -85,29 +103,105 @@
 
     /*列表的头部样式*/
     .list-title {
+    	position: fixed;
+    	top: 0.5rem;
+    	width: 100%;
         display: flex;
         list-style: none;
         height: 0.45rem;
-
-
+        border-bottom: 1px solid #e1e5e7;
     }
     .list-title>li{
         flex: 1 30%;
-        border: 2px solid ;
-        text-align: center;
+
     }
+    .dropdown-toggle {	
+    	display: inline-block;
+    	position: relative;
+    	top: 50%;
+    	transform: translateY(-50%);
+    	width: 100%;
+    	color: #999;
+    	letter-spacing: 0.02rem;
+    	text-align: center;
+    	border-right: 1px solid #e1e5e7;
 
+    }
+    .caret {
+    	position: absolute;
+    	right: 0.05rem;
+    	top: 50%;
+    	transform: translateY(-50%);
 
-
-
-
+    }
+    .dropdown-menu {
+    	width: 100%;
+    }
     /*列表的头部样式结束*/
 
-     
+    /*列表项样式*/	
+    main {
+    	position: absolute;
+    	top: 0.95rem;
+    	bottom: 0.6rem;
+    	width: 100%;
+    	overflow: auto;
+    }
+    .list-group {
+
+    }
+
+	
 
 
 
-   
+
+
+    /*列表项样式结束*/
+
+    /*footer样式*/	
+    footer {
+    	display: flex;
+    	justify-content: space-around;
+    	position: fixed;
+    	bottom: 0;
+    	height: 0.55rem;width: 100%;
+    	border-top: 1px solid #e1e5e7; 
+    	background-color: #fff;
+
+    }
+    .home,
+    .people {
+		background: #fff;
+    	font-size: 0.12rem;
+    }
+    .home {
+    	color: #5fc0cd;
+    }
+    .people {
+    	color: #999;
+    }
+    .bg-home {
+        width: 23px; height: 20px;
+        background: url('image/css_sprites.png') -51px -10px;
+        margin-bottom: 0.07rem;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .bg-people {
+        width: 21px; height: 21px;
+        background: url('image/css_sprites.png') -10px -52px;
+        margin-left: auto;
+        margin-right: auto;
+         margin-bottom: 0.07rem;
+    }
+    
+	.write {
+		width: 0.55rem; 
+		background: url('image/Write.png') center no-repeat;	
+	}
+    /*footer样式结束*/
     </style>
     
 </head>
@@ -120,27 +214,55 @@
         </div>
         <a href="#" class="bg-position"></a>
    </header>
-   <main>
-       <div class="title">
+   <div class="title">
            <ul class="list-title">
              <li class="dropdown">
                 <a href="#" class="dropdown-toggle trigger-dropdown" data-toggle="dropdown">
-                所在地<span class="caret"></span>
+                所在地
+                <span class="caret" ></span>
                 </a>
                 <ul class="dropdown-menu" role="menu">
                     <li><a href="#"></a></li>
-                </ul>
-                         
+                </ul>         
              </li>
-             <li><a href="#">SVN</a></li>
-             <li><a href="#">VB.Net</a></li>
-             
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle trigger-dropdown" data-toggle="dropdown">
+                食宿
+                <span class="caret" ></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#"></a></li>
+                </ul>         
+             </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle trigger-dropdown" data-toggle="dropdown">
+                病人情况
+                <span class="caret" ></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#"></a></li>
+                </ul>         
+             </li> 
            </ul>
-       </div>
-       <div class="list">
-          
-       </div>
+   <main>   
+          <ul class="list-group">
+          	<li class="list-group-item">
+          		
+          	</li>
+          	
+          </ul>
    </main>
+   <footer>
+   	<button class="home">
+   		<div class="bg-home"></div>
+   		<div>首页</div>
+   </button>
+   	<button class="write"></button>
+   	<button class="people">
+   		<div class="bg-people"></div>
+   		<div>我的</div>
+   	</button>   	
+   </footer>
         
    
 
