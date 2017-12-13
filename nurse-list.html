@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>文档标题</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <style type="text/css">
+    html {
+        font-size: 625%;
+        height: 100%;
+    }
+    body{
+        font-size: 0.16rem;
+        margin: 0 ;
+        padding: 0;
+        height: 100%;
+
+    }
+    * {
+        margin: 0;padding: 0;
+    }
+   /* header样式*/
+    header{
+        width: 100%;
+        height: 0.5rem;
+        background-color: #5fc0cd;
+        text-align: center;
+
+    }
+    header::before{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .group-btn {
+        display: inline-block;
+         font-size: 0;
+        letter-spacing: -4px;
+         background-color: #55a8b3;
+           border-radius: 3px;
+           
+    }
+    .group-btn * {
+        font-size: 16px;
+        letter-spacing: 0.02rem;
+
+    }
+    .group-btn {
+        width: 40%;
+        max-width: 3rem;
+        min-width: 1.5rem;
+
+    }
+    
+    button {
+        outline: none;
+        border-radius: 4px;
+        border: none;
+        width: 50%;
+        height: 0.42rem;   
+        color: white;
+        background: #55a8b3;           
+    }
+    .btn2 {
+        color:  #5fc0cd;
+        background-color: #fff;
+    }
+    .bg-position {
+        float: right;
+        position: relative;
+        right: 0.2rem;
+        top: 50%;
+        transform: translateY(-50%); 
+        width: 21px; height: 22px;
+        background: url('image/css_sprites.png') -10px -10px;
+    }
+    /* header样式结束*/
+
+    /*列表的头部样式*/
+    .list-title {
+        display: flex;
+        list-style: none;
+        height: 0.45rem;
+
+
+    }
+    .list-title>li{
+        flex: 1 30%;
+        border: 2px solid ;
+        text-align: center;
+    }
+
+
+
+
+
+    /*列表的头部样式结束*/
+
+     
+
+
+
+   
+    </style>
+    
+</head>
+
+<body>
+   <header>  
+       <div class="group-btn">
+            <button type="button" class="btn1">找雇主</button>
+            <button type="button" class="btn2">找护工</button>     
+        </div>
+        <a href="#" class="bg-position"></a>
+   </header>
+   <main>
+       <div class="title">
+           <ul class="list-title">
+             <li class="dropdown">
+                <a href="#" class="dropdown-toggle trigger-dropdown" data-toggle="dropdown">
+                所在地<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#"></a></li>
+                </ul>
+                         
+             </li>
+             <li><a href="#">SVN</a></li>
+             <li><a href="#">VB.Net</a></li>
+             
+           </ul>
+       </div>
+       <div class="list">
+          
+       </div>
+   </main>
+        
+   
+
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
