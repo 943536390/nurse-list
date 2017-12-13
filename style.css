@@ -1,0 +1,235 @@
+/*全局样式*/
+    html {
+        font-size: 625%;
+        height: 100%;
+    }
+    body{
+        font-size: 0.16rem;
+        margin: 0 ;
+        padding: 0;
+        height: 100%;
+
+
+    }
+    * {
+        margin: 0;padding: 0;
+        letter-spacing: 0.02rem;
+    }
+    a:link, 
+    a:hover, 
+    a:active, 
+    a:visited {
+    	text-decoration: none;
+
+    }
+    button {
+    	outline: none;
+    	border: none;
+    }
+   
+    /*全局样式结束*/
+
+   /* header样式*/
+    header{
+    	position: fixed;
+        width: 100%;
+        height: 0.5rem;
+        background-color: #5fc0cd;
+        text-align: center;
+
+    }
+    header::before{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .group-btn {
+        display: inline-block;
+         font-size: 0;
+        letter-spacing: -4px;
+         background-color: #55a8b3;
+           border-radius: 3px;
+           
+    }
+    .group-btn * {
+        letter-spacing: 0.02rem;
+
+    }
+    .group-btn {
+        width: 40%;
+        max-width: 3rem;
+        min-width: 1.5rem;
+
+    }
+    
+    .btn1, 
+    .btn2{
+        outline: none;
+        border-radius: 4px;
+        border: none;
+        width: 50%;
+        height: 0.42rem;   
+        color: white;
+        background: #55a8b3; 
+         font-size: 0.17rem;          
+    }
+    .btn2 {
+        color:  #5fc0cd;
+        background-color: #fff;
+    }
+    .bg-position {
+        float: right;
+        position: relative;
+        right: 0.2rem;
+        top: 50%;
+        transform: translateY(-50%); 
+        width: 21px; height: 22px;
+        background: url('image/css_sprites.png') -10px -10px;
+    }
+    /* header样式结束*/
+
+    /*列表的头部样式*/
+    .list-title {
+    	position: fixed;
+    	top: 0.5rem;
+    	width: 100%;
+        display: flex;
+        list-style: none;
+        height: 0.45rem;
+        border-bottom: 1px solid #e1e5e7;
+    }
+    .list-title>li{
+        flex: 1 30%;
+
+    }
+    .dropdown-toggle {	
+    	display: inline-block;
+    	position: relative;
+    	top: 50%;
+    	transform: translateY(-50%);
+    	width: 100%;
+    	color: #999;
+    	letter-spacing: 0.02rem;
+    	text-align: center;
+    	border-right: 1px solid #e1e5e7;
+
+    }
+    .caret {
+    	position: absolute;
+    	right: 0.05rem;
+    	top: 50%;
+    	transform: translateY(-50%);
+
+    }
+    .dropdown-menu {
+    	width: 100%;
+    }
+    /*列表的头部样式结束*/
+
+    /*列表项样式*/	
+    main {
+    	position: absolute;
+    	top: 0.95rem;
+    	bottom: 0.6rem;
+    	width: 100%;
+    	min-width: 320px;
+    	overflow: auto;
+    	z-index: -1;
+    	border: none;
+    }
+    .list-group-item {
+    	font-size: 0.14rem;
+    	border-top: none;
+    	border-bottom: 1px solid #e1e5e7;
+    	padding-right: 0.1rem;
+
+    }
+    .date {
+    	color: #999;
+
+    }
+    .bg-calendar {
+    	display: inline-block;
+    	width: 12px;height: 12px;
+    	background: url(image/css_sprites.png) -124px -10px;
+    	margin-right: 0.1rem;
+    }
+    .content {
+    	position: relative;
+    }
+    .time {
+    	margin:0.2rem ;
+    	font-size: 0.14rem;
+    	color: #000;
+    }
+    .price {
+		position: absolute;
+    	right: 0.2rem;
+    	font-size: 0.15rem;
+    	color: #e63b0e;
+    }
+    .bg-more {
+    	position: absolute;
+    	right: 0rem;
+    	top: 50%;
+    	transform: translateY(-50%);
+		width: 10px;height: 17px;
+		background: url(image/css_sprites.png) -94px -10px;
+    }
+    .position {
+    	color: #999;
+
+    }
+    .bg-pos {
+    	display: inline-block;
+    	width: 10px;height: 12px;
+    	background: url(image/css_sprites.png) -124px -42px;
+    	margin-right: 0.1rem;
+    }
+
+    /*列表项样式结束*/
+
+    /*footer样式*/	
+    footer {
+    	display: flex;
+    	justify-content: space-around;
+    	position: fixed;
+    	bottom: 0;
+    	height: 0.55rem;width: 100%;
+    	border-top: 1px solid #e1e5e7; 
+    	background-color: #fff;
+
+    }
+    .home,
+    .people {
+		background: #fff;
+    	font-size: 0.1rem;
+    }
+    .home {
+    	color: #5fc0cd;
+    }
+    .people {
+    	color: #999;
+    }
+    .bg-home {
+        width: 23px; height: 20px;
+        background: url('image/css_sprites.png') -51px -10px;
+        margin-bottom: 0.07rem;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .bg-people {
+        width: 21px; height: 21px;
+        background: url('image/css_sprites.png') -10px -52px;
+        margin-left: auto;
+        margin-right: auto;
+         margin-bottom: 0.07rem;
+    }
+    
+	.write {
+		width: 0.55rem; 
+		background: url('image/Write.png') center no-repeat;	
+	}
+    /*footer样式结束*/
